@@ -309,26 +309,34 @@ function scrambleRole(el) {
 
   const SKILLS = [
     // orbit 0 — innermost
-    { label: 'Python',     orbit: 0, color: '#7C3AED' },
-    { label: 'C++',        orbit: 0, color: '#8B5CF6' },
-    { label: 'C',          orbit: 0, color: '#A78BFA' },
-    // orbit 1
-    { label: 'React',      orbit: 1, color: '#7C3AED' },
-    { label: 'Vue.js',     orbit: 1, color: '#8B5CF6' },
-    { label: 'Svelte',     orbit: 1, color: '#A78BFA' },
-    { label: 'JavaScript', orbit: 1, color: '#C4B5FD' },
-    { label: 'HTML',       orbit: 1, color: '#7C3AED' },
-    { label: 'CSS',        orbit: 1, color: '#8B5CF6' },
-    // orbit 2 — outer
-    { label: 'FastAPI',    orbit: 2, color: '#7C3AED' },
-    { label: 'Flask',      orbit: 2, color: '#8B5CF6' },
-    { label: 'Node.js',    orbit: 2, color: '#A78BFA' },
-    { label: 'PostgreSQL', orbit: 2, color: '#7C3AED' },
-    { label: 'MongoDB',    orbit: 2, color: '#8B5CF6' },
-    { label: 'React',      orbit: 2, color: '#A78BFA' },
-    { label: 'Figma',      orbit: 2, color: '#C4B5FD' },
-    { label: 'Git',        orbit: 2, color: '#7C3AED' },
-    { label: 'Supabase',   orbit: 2, color: '#8B5CF6' },
+   // orbit 0 — innermost
+{ label: 'Python',        orbit: 0, color: '#7C3AED' },
+{ label: 'JavaScript',    orbit: 0, color: '#8B5CF6' },
+{ label: 'C++',           orbit: 0, color: '#A78BFA' },
+{ label: 'C',             orbit: 0, color: '#C4B5FD' },
+
+// orbit 1
+{ label: 'React',         orbit: 1, color: '#7C3AED' },
+{ label: 'Vue.js',        orbit: 1, color: '#8B5CF6' },
+{ label: 'Svelte',        orbit: 1, color: '#A78BFA' },
+{ label: 'HTML',          orbit: 1, color: '#C4B5FD' },
+{ label: 'CSS',           orbit: 1, color: '#7C3AED' },
+{ label: 'FastAPI',       orbit: 1, color: '#8B5CF6' },
+{ label: 'Flask',         orbit: 1, color: '#A78BFA' },
+
+// orbit 2 — outer
+{ label: 'Node.js',       orbit: 2, color: '#7C3AED' },
+{ label: 'SQL',           orbit: 2, color: '#8B5CF6' },
+{ label: 'PostgreSQL',    orbit: 2, color: '#A78BFA' },
+{ label: 'MongoDB',       orbit: 2, color: '#C4B5FD' },
+{ label: 'Pandas',        orbit: 2, color: '#7C3AED' },
+{ label: 'NumPy',         orbit: 2, color: '#8B5CF6' },
+{ label: 'Scikit-learn',  orbit: 2, color: '#A78BFA' },
+{ label: 'Plotly Dash',   orbit: 2, color: '#C4B5FD' },
+{ label: 'Git',           orbit: 2, color: '#7C3AED' },
+{ label: 'Supabase',      orbit: 2, color: '#8B5CF6' },
+{ label: 'NeonDB',        orbit: 2, color: '#A78BFA' },
+{ label: 'Figma',         orbit: 2, color: '#C4B5FD' },
   ];
 
   // Assign angular positions per orbit
