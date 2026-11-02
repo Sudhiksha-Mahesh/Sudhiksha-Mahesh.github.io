@@ -216,10 +216,19 @@ function revealHeroName() {
 }
 
 /* ── Role text scramble ── */
+const roles = [
+  'Data & Analytics',
+  'Software Development',
+  'Full Stack Engineering',
+  'Problem Solving'
+];
+let roleIndex = 0;
+
 function scrambleRole(el) {
   if (!el) return;
 
-  const target  = el.textContent;
+  const target  = roles[roleIndex];
+  roleIndex = (roleIndex + 1) % roles.length;
   const chars   = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%&';
   let   iteration = 0;
   const total   = target.length * 3;
@@ -234,7 +243,10 @@ function scrambleRole(el) {
       .join('');
 
     iteration++;
-    if (iteration > total) clearInterval(interval);
+    if (iteration > total) {
+      clearInterval(interval);
+      setTimeout(() => scrambleRole(el), 1600);
+    }
   }, 40);
 }
 
